@@ -1,0 +1,4 @@
+EXPORTS
+	?ExecuteLD@CSvgtFileViewDetailsDialog@@QAEXAAVRFile@@@Z @ 1 NONAME ; void CSvgtFileViewDetailsDialog::ExecuteLD(class RFile &)
+	?NewL@CSvgtFileViewDetailsDialog@@SAPAV1@XZ @ 2 NONAME ; class CSvgtFileViewDetailsDialog * CSvgtFileViewDetailsDialog::NewL(void)
+

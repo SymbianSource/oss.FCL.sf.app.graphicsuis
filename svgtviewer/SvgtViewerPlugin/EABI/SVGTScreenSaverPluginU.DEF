@@ -1,0 +1,15 @@
+EXPORTS
+	_Z24ImplementationGroupProxyRi @ 1 NONAME
+	_Z12NPP_Shutdownv @ 2 NONAME
+	_Z15InitializeFuncsP14_NPPluginFuncs @ 3 NONAME
+	_ZTI11CSvgtPlugin @ 4 NONAME ; #<TI>#
+	_ZTI15CSvgScreenSaver @ 5 NONAME ; #<TI>#
+	_ZTI19CSvgtPluginEcomMain @ 6 NONAME ; #<TI>#
+	_ZTI20CSvgRenderFrameTimer @ 7 NONAME ; #<TI>#
+	_ZTI22CSvgRenderFrameControl @ 8 NONAME ; #<TI>#
+	_ZTV11CSvgtPlugin @ 9 NONAME ; #<VT>#
+	_ZTV15CSvgScreenSaver @ 10 NONAME ; #<VT>#
+	_ZTV19CSvgtPluginEcomMain @ 11 NONAME ; #<VT>#
+	_ZTV20CSvgRenderFrameTimer @ 12 NONAME ; #<VT>#
+	_ZTV22CSvgRenderFrameControl @ 13 NONAME ; #<VT>#
+

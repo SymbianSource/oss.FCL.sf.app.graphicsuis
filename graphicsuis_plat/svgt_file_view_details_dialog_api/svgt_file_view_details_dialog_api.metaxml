@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="58cea3f8c09d305d4cc41fd004394af0" dataversion="2.0">
+  <name>SVGT File View Details Dialog API</name>
+  <description>Provides the interface to display svgt file details.</description>
+  <type>c++</type>
+  <collection>domain</collection>
+  <libs>
+    <lib name="svgtfileviewdetails.lib" />
+  </libs>
+  <release category="platform"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

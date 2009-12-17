@@ -1,0 +1,75 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This is the .mmp for building the SVGT File Details dialog DLL.
+*
+*/
+
+
+// 
+//
+// using relative paths for sourcepath and user includes
+// exports are unfrozen
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+
+TARGET        svgtfileviewdetails.dll
+TARGETTYPE    dll
+UID           0x1000008d 0x10004420
+
+CAPABILITY      CAP_GENERAL_DLL 
+VENDORID        VID_DEFAULT
+
+SOURCEPATH    ../data
+
+LANGUAGE_IDS
+
+// This is a SYSTEMINCLUDE macro containing the applications
+// layer specific include directories
+APP_LAYER_SYSTEMINCLUDE
+
+START RESOURCE  svgtfileviewdetails.rss
+TARGETPATH      RESOURCE_FILES_DIR
+HEADER
+LANGUAGE_IDS
+END // RESOURCE
+
+SOURCEPATH    ../SvgtFileViewDetailsSrc
+SOURCE        svgtfileviewdetails.cpp
+SOURCE	      SVGTDrmHelper.cpp
+	
+USERINCLUDE   ../SvgtFileViewDetailsInc
+
+
+LIBRARY       euser.lib 
+LIBRARY       efsrv.lib 
+LIBRARY       cone.lib 
+LIBRARY       bafl.lib 
+LIBRARY       eikcoctl.lib 
+LIBRARY       caf.lib 
+LIBRARY       avkon.lib 
+LIBRARY       drmhelper.lib 
+LIBRARY       CommonEngine.lib 
+LIBRARY       tzclient.lib
+
+#if defined(WINSCW)
+    deffile ../BWINSCW/svgtfileviewdetails.def
+#elif defined(ARMCC)
+    deffile ../EABI/svgtfileviewdetails.def
+#endif
+
+nostrictdef
+//exportunfrozen
+
+// End of file
+

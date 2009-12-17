@@ -1,0 +1,339 @@
+/*
+* Copyright (c) 2004-2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Localization strings for SVGT UI Control
+*
+*/
+
+
+// APPLICATION NAME
+
+//d:Short name of the application, application shell grid layout
+//l:cell_app_pane_1
+//
+#define qtn_apps_sv_grid "SVGT Viewer"
+
+//d: Option in the Options menu.
+//d: The option is used to rotate the presentation with selected angle.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.1
+#define qtn_svgt_options_rotate "Rotate"
+
+//d: Sub-menu for the "Rotate" option.
+//d: The presentation is rotated with angle 90 degrees.
+//l: list_single_popup_submenu_pane_1
+//w:
+//r:3.1
+#define qtn_svgt_options_rotate_90 "90°"
+
+//d: Sub-menu for the "Rotate" option.
+//d: The presentation is rotated with angle 180 degrees.
+//l: list_single_popup_submenu_pane_1
+//w:
+//r:3.1
+#define qtn_svgt_options_rotate_180 "180°"
+
+//d: Sub-menu for the "Rotate" option.
+//d: The presentation is rotated with angle 270 degrees.
+//l: list_single_popup_submenu_pane_1
+//w:
+//r:3.1
+#define qtn_svgt_options_rotate_270 "270°"
+
+//d: Option in the Options menu.
+//d: Available when SVG-T Viewer is launched from applications which are
+//d: used for storing media files, like the Media Gallery application.
+//d: Gives details of the file like size, date, format etc.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_options_view_details "View details"
+
+//d: Option in the Options menu.
+//d: Available when the full screen option is selected. Used to bring back the view to
+//d: normal screen mode.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_options_normal_screen "Normal screen"
+
+//d: Option in the Options menu.
+//d: The option is available when the SVG-T presentation being viewed in normal screen
+//d: mode. The option is used to view the presentation in full screen mode.
+//d: In Full screen mode Status pane and Control pane are not visible.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_options_full_screen "Full screen"
+
+//d: Option in the Options menu.
+//d: The option is used to search the text in the SVG-T presentation.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_options_find_text "Find text"
+
+//d: Option in the Options menu.
+//d: The option is used to set the presentation mode to playing continuously or once.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_options_loop "Loop"
+
+//d: Sub-menu for the "Loop" option.
+//d: The presentation is played only once if this sub-menu is selected.
+//l: list_single_popup_submenu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_options_loop_off "Off"
+
+//d: Sub-menu for the "Loop" option.
+//d: The presentation is played continuously so that when it reaches the end, it starts all over again.
+//l: list_single_popup_submenu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_options_loop_on "On"
+
+//d: Option in the Options menu.
+//d: Option to stop the presentation, will appear if presentation is played or paused.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_options_stop "Stop"
+
+#ifdef RD_SVGT_AUDIO_SUPPORT
+//d: Option in the Options menu.
+//d: Option to set the volume for the presentation.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.2
+//
+#define qtn_svgt_options_setvolume "Set Volume"
+
+//d: Option in the Options menu.
+//d: Option to mute the volume for the presentation.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.2
+//
+#define qtn_svgt_options_mute "Mute"
+
+//d: Option in the Options menu.
+//d: Option to unmute the volume for the presentation.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.2
+//
+#define qtn_svgt_options_unmute "Unmute"
+#endif //RD_SVGT_AUDIO_SUPPORT
+
+//d: Option in the Options menu.
+//d: Option to pause the presentation, will appear if presentation is being played.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_options_pause "Pause"
+
+//d: Option in the Options menu.
+//d: Option to play the presentation, will appear if presentation is stopped or paused.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_options_play "Play"
+
+//d: Option in the Options menu.
+//d: Option to zoom out a zoomed-in presentation.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_options_zoom_out "Zoom out"
+
+//d: Option in the Options menu.
+//d: Option to zoom-in a presentation.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_options_zoom_in "Zoom in"
+
+//d: Option in the Options menu.
+//d: Saves the image into Media Gallery.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_options_save "Save"
+
+
+
+//d: The progress note text.
+//d: When the zoom-in or zoom-out option is selected, the progress note zooming is displayed
+//d: until the presentation is zoomed.
+//l: popup_note_wait_window_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_waiting_zooming "Zooming"
+
+
+//d: Wait Note.
+//d: When the SVG-T file is opened, the "opening file" wait note is displayed,
+//d: until the presentation is completed loaded by the engine.
+//l: popup_note_wait_window_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_waiting_opening "Opening file"
+
+//d: Information note for the text area editing and text editing.
+//d: If "<" or ">" is found in edited content of text area and text then error has to be flashed
+//l: popup_note_window
+//w:
+//r:3.1
+//
+#define qtn_svgt_braces_found_in_textarea "< and > characters not allowed in editable area"
+
+
+
+//d: Information note for the "Find Text" option.
+//d: If the Find text option does not give any results, an information note "Text not found" is displayed.
+//l: popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_svgt_info_not_found "Text not found"
+
+//d: If some parts of the presentation (like embedded files) can not be shown, an
+//d: information note "Unable to show all content" is displayed.
+//l: popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_svgt_info_not_complete "Unable to show all content"
+
+//d: If the presentation can not be opened for any reason (for example a corrupted
+//d: file or an unsupported format), an information note "Unable to open file"
+//d: is displayed at the calling application and the viewer is not opened.
+//l: popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_svgt_info_unable_to_open "Unable to open file"
+
+
+//d: "Find Text" Query Prompt Text
+//l: popup_query_data_window_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_query_enter_string "Enter query string: "
+
+
+//d: If a video call is going on the viewer is not allowed to be opened.
+//l: popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_svgt_info_video_call_ongoing "SVG-T Viewer cannot be used during video call"
+
+//d: If a synchronous download of a remote image is going on,  the 
+//d: "downloading file" wait note is displayed 
+//l: popup_note_wait_window_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_waiting_downloading "downloading "
+
+//d: If a locally linked image is not found,  the information note
+//d: "File not found" displayed 
+//l: popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_svgt_file_not_found "File not found"
+
+//d: Progress Indicator Format String 
+//d: %0U is elapsed time 
+//d: %1U is the total duration of the presentation 
+//d: ( Both the Unicode texts are formatted with 
+//d:   qtn_time_durat_min_sec_with_zero if the time is less than or 
+//d:   equal to One hour, else qtn_time_durat_long )
+//l: navi_pane_5
+//w:
+//r:3.0
+//
+#define qtn_svgt_time_indic "%0U/%1U"
+//d:Used as a confirmation query in situations where user wants to 
+//d:exit but the downloaded content is not saved. %U is replaced 
+//d:with the downloaded content name.   
+//l:popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_iv_query_conf_save_downloaded "%U has not been saved. Save now?"
+
+//d:Options menu item for the Client App to open Downloads List.
+//l:list_single_popup_menu_pane_1
+//w:
+//
+#define qtn_browser_list_downloads "Downloads"
+
+//d:Saved information note.
+//d:Shown when media clip is saved to Media Gallery.
+//l:popup_note_window
+//
+
+
+//d: Text Edit Query Prompt Text
+//l: popup_query_data_window_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_edit_query_string "Edit Text"
+
+//d: Text Selection Query Prompt Text
+//l: popup_query_data_window_1
+//w:
+//r:3.0
+//
+#define qtn_svgt_select_query_string "Select Text"
+
+//d: Option in the Options menu.
+//d: The option is used to select the text which is present below the pointer.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.1
+//
+#define qtn_svgt_options_select_text "Select Text"
+
+//d: Option in the Options menu.
+//d: The option is used to edit the text which is present below the pointer.
+//l: list_single_popup_menu_pane_1
+//w:
+//r:3.1
+//
+#define qtn_svgt_options_edit_text "Edit Text"
+
+// End of File

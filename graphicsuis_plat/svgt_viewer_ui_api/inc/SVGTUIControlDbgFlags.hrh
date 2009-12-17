@@ -1,0 +1,50 @@
+/*
+* Copyright (c) 2004,2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This header file enlists the debug flags in use by the SVGT
+*                UI Control.
+*
+*/
+
+#ifndef SVGTUICONTROLDBGFLAGS_HRH
+#define SVGTUICONTROLDBGFLAGS_HRH
+// $Flagname
+// Purpose:
+// Target Value:
+
+// SVGTUICONTROL_DBG_LOADING_WAITNOTE_ENABLED
+// Purpose: If defined, this flag enables the display of waitnote while  
+//          loading svg content. 
+// Target Value: Defined
+#define SVGTUICONTROL_DBG_LOADING_WAITNOTE_ENABLED
+
+// SVGTUICONTROL_DBG_DRM_THUMBNAIL_API_ENABLE
+// Purpose: If defined, this flag enables the portion of the code where the 
+// DRM Thumbnail API is set.
+// Target Value: defined
+#define SVGTUICONTROL_DBG_DRM_THUMBNAIL_API_ENABLE
+
+// SVGTUICONTROL_DBG_TEXT_EDIT_SELECT_API_ENABLE
+// Purpose: If defined, this flag enables the portion of the code where the 
+// DRM Thumbnail API is set.
+// Target Value: defined
+#define SVGTUICONTROL_DBG_TEXT_EDIT_SELECT_API_ENABLE
+
+// SVGTUICONTROL_DBG_OPENVG_TESTING_ENABLE
+// Purpose: If defined, this flag enables the use of OpenVG in the SVG Engine
+// Target Value: undefined
+#undef SVGTUICONTROL_DBG_OPENVG_TESTING_ENABLE
+
+#endif // SVGTUICONTROLDBGFLAGS_HRH
+// End of File
+

@@ -1,0 +1,65 @@
+EXPORTS
+	_ZN16CSVGTFileManager10CancelCopyEv @ 1 NONAME
+	_ZN16CSVGTFileManager12SetAllowMoveEl @ 2 NONAME
+	_ZN16CSVGTFileManager19StartCopyOperationLEP19MSVGTUISaveListenerR5RFileRK7TDesC16 @ 3 NONAME
+	_ZN16CSVGTFileManager19StartCopyOperationLEP19MSVGTUISaveListenerRK7TDesC16S4_ @ 4 NONAME
+	_ZN16CSVGTFileManager4NewLEv @ 5 NONAME
+	_ZN16CSVGTFileManagerD0Ev @ 6 NONAME
+	_ZN16CSVGTFileManagerD1Ev @ 7 NONAME
+	_ZN16CSVGTFileManagerD2Ev @ 8 NONAME
+	_ZN20CSVGTAppObserverUtil10ConstructLEP5RFile @ 9 NONAME
+	_ZN20CSVGTAppObserverUtil10ConstructLEP5RFileRK7TDesC16iii @ 10 NONAME
+	_ZN20CSVGTAppObserverUtil10ConstructLEv @ 11 NONAME
+	_ZN20CSVGTAppObserverUtil10FetchImageERK7TDesC16R3RFsR5RFile @ 12 NONAME
+	_ZN20CSVGTAppObserverUtil11CanShowSaveEv @ 13 NONAME
+	_ZN20CSVGTAppObserverUtil12GetLocalFileERK7TDesC16R6TDes16S2_ @ 14 NONAME
+	_ZN20CSVGTAppObserverUtil12IsSavingDoneEv @ 15 NONAME
+	_ZN20CSVGTAppObserverUtil13LinkActivatedERK7TDesC16 @ 16 NONAME
+	_ZN20CSVGTAppObserverUtil14LinkActivatedLERK7TDesC16 @ 17 NONAME
+	_ZN20CSVGTAppObserverUtil15GetSmilFitValueER6TDes16 @ 18 NONAME
+	_ZN20CSVGTAppObserverUtil15SVGTSavingDoneLEi @ 19 NONAME
+	_ZN20CSVGTAppObserverUtil15SetDownloadMenuEi @ 20 NONAME
+	_ZN20CSVGTAppObserverUtil16DialogDismissedLEi @ 21 NONAME
+	_ZN20CSVGTAppObserverUtil16HandleDMgrEventLER13RHttpDownload18THttpDownloadEvent @ 22 NONAME
+	_ZN20CSVGTAppObserverUtil17IsDownloadNeededLERK7TDesC16 @ 23 NONAME
+	_ZN20CSVGTAppObserverUtil17NewFetchImageDataERK7TDesC16 @ 24 NONAME
+	_ZN20CSVGTAppObserverUtil18AssignEmbededDataLERK7TDesC16 @ 25 NONAME
+	_ZN20CSVGTAppObserverUtil19SVGTPositionChangedEi @ 26 NONAME
+	_ZN20CSVGTAppObserverUtil20DisplayDownloadMenuLEv @ 27 NONAME
+	_ZN20CSVGTAppObserverUtil21LinkActivatedWithShowERK7TDesC16S2_ @ 28 NONAME
+	_ZN20CSVGTAppObserverUtil22LinkActivatedWithShowLERK7TDesC16S2_ @ 29 NONAME
+	_ZN20CSVGTAppObserverUtil4NewLEP13CSVGTUIDialogP5RFile @ 30 NONAME
+	_ZN20CSVGTAppObserverUtil4NewLEP13CSVGTUIDialogP5RFileRK7TDesC16iii @ 31 NONAME
+	_ZN20CSVGTAppObserverUtil7DoSaveLEi @ 32 NONAME
+	_ZN20CSVGTAppObserverUtilC1EP13CSVGTUIDialog @ 33 NONAME
+	_ZN20CSVGTAppObserverUtilC2EP13CSVGTUIDialog @ 34 NONAME
+	_ZN20CSVGTAppObserverUtilD0Ev @ 35 NONAME
+	_ZN20CSVGTAppObserverUtilD1Ev @ 36 NONAME
+	_ZN20CSVGTAppObserverUtilD2Ev @ 37 NONAME
+	_ZNK20CSVGTAppObserverUtil11IsAllowMoveEv @ 38 NONAME
+	_ZNK20CSVGTAppObserverUtil15CanShowDownloadEv @ 39 NONAME
+	_ZNK20CSVGTAppObserverUtil17GetFileNameAndExtER6TDes16 @ 40 NONAME
+	_ZNK20CSVGTAppObserverUtil18GetFileNameFromUriERK7TDesC16R6TDes16 @ 41 NONAME
+	_ZNK20CSVGTAppObserverUtil21LaunchDownloadedFileLERK7TDesC16ii @ 42 NONAME
+	_ZNK20CSVGTAppObserverUtil23IsFileFullPathAvailableEv @ 43 NONAME
+	_ZNK20CSVGTAppObserverUtil26GetDefaultInetAccessPointLERm @ 44 NONAME
+	_ZTI20CSVGTAppObserverUtil @ 45 NONAME DATA 56 ; #<TI>#
+	_ZTI23CSVGTViewerAppDownloads @ 46 NONAME DATA 12 ; #<TI>#
+	_ZTV20CSVGTAppObserverUtil @ 47 NONAME DATA 172 ; #<VT>#
+	_ZTV23CSVGTViewerAppDownloads @ 48 NONAME DATA 20 ; #<VT>#
+	_ZThn12_N20CSVGTAppObserverUtil15SVGTSavingDoneLEi @ 49 NONAME ; #<thunk>#
+	_ZThn12_N20CSVGTAppObserverUtil19SVGTPositionChangedEi @ 50 NONAME ; #<thunk>#
+	_ZThn16_N20CSVGTAppObserverUtil16DialogDismissedLEi @ 51 NONAME ; #<thunk>#
+	_ZThn4_N20CSVGTAppObserverUtil10FetchImageERK7TDesC16R3RFsR5RFile @ 52 NONAME ; #<thunk>#
+	_ZThn4_N20CSVGTAppObserverUtil11CanShowSaveEv @ 53 NONAME ; #<thunk>#
+	_ZThn4_N20CSVGTAppObserverUtil12IsSavingDoneEv @ 54 NONAME ; #<thunk>#
+	_ZThn4_N20CSVGTAppObserverUtil13LinkActivatedERK7TDesC16 @ 55 NONAME ; #<thunk>#
+	_ZThn4_N20CSVGTAppObserverUtil15GetSmilFitValueER6TDes16 @ 56 NONAME ; #<thunk>#
+	_ZThn4_N20CSVGTAppObserverUtil17NewFetchImageDataERK7TDesC16 @ 57 NONAME ; #<thunk>#
+	_ZThn4_N20CSVGTAppObserverUtil18AssignEmbededDataLERK7TDesC16 @ 58 NONAME ; #<thunk>#
+	_ZThn4_N20CSVGTAppObserverUtil20DisplayDownloadMenuLEv @ 59 NONAME ; #<thunk>#
+	_ZThn4_N20CSVGTAppObserverUtil21LinkActivatedWithShowERK7TDesC16S2_ @ 60 NONAME ; #<thunk>#
+	_ZThn4_N20CSVGTAppObserverUtil7DoSaveLEi @ 61 NONAME ; #<thunk>#
+	_ZThn4_NK20CSVGTAppObserverUtil15CanShowDownloadEv @ 62 NONAME ; #<thunk>#
+	_ZThn8_N20CSVGTAppObserverUtil16HandleDMgrEventLER13RHttpDownload18THttpDownloadEvent @ 63 NONAME ; #<thunk>#
+

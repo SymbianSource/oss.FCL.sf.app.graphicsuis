@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="1e890b2e23f47a2b630e4b1f18e82c22" dataversion="2.0">
+  <name>SVG-T Viewer UI API</name>
+  <description>Provides SVG-T UI control and Dialog APIs.</description>
+  <type>c++</type>
+  <collection>domain</collection>
+  <libs>
+    <lib name="SVGTUIControl.lib" />
+  </libs>
+  <release category="platform"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>
