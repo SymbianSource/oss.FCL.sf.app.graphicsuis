@@ -23,7 +23,7 @@
 
 // INCLUDES
 
-#include <SvgRequestObserver.h>
+#include <SVGRequestObserver.h>
 
 
 // FUNCTION PROTOTYPES

@@ -22,13 +22,13 @@
 
 #include <e32base.h>
 #include <e32std.h>
-#include <aknprogressdialog.h>
-#include <CDownloadMgrUiUserInteractions.h>
-#include <CDownloadMgrUiDownloadsList.h>
-#include <CDownloadMgrUiLibRegistry.h>
+#include <AknProgressDialog.h>
+#include <cdownloadmgruiuserinteractions.h>
+#include <cdownloadmgruidownloadslist.h>
+#include <cdownloadmgruilibregistry.h>
 
 #include <SVGTAppObserver.h>
-#include <DownloadMgrClient.h>
+#include <downloadmgrclient.h>
 #include <SVGTUISaveListener.h>
 #include <SVGTFileManager.h>
 #include <SVGTViewerAppDownloads.h>

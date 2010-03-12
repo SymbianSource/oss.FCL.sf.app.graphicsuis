@@ -34,10 +34,10 @@
 #endif
 
 #include <npupp.h>
-#include <PluginAdapterInterface.h>
+#include <pluginadapterinterface.h>
 
 //This is to include ECom Style Plugin Specific headers
-#include <CEcomBrowserPluginInterface.h>
+#include <cecombrowserplugininterface.h>
 
 //Implementation id Svgt Ecom Plugin
 const TInt KSvgtPluginImplementationValue = 0x102071E6; 

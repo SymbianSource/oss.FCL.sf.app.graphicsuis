@@ -20,7 +20,7 @@
 #define SVGTVIEWERAPPAPPUI_H
 
 #include <SVGTAppObserver.h>
-#include <DownloadMgrClient.h>
+#include <downloadmgrclient.h>
 
 // FORWARD DECLARATIONS
 class CAknAppUi;

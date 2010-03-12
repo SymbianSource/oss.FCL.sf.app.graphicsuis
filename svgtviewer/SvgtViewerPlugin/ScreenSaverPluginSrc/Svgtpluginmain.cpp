@@ -17,7 +17,7 @@
 
 
 #include <implementationproxy.h>
-#include <CEcomBrowserPluginInterface.h>
+#include <cecombrowserplugininterface.h>
 
 #include "Svgtplugin.h"
 

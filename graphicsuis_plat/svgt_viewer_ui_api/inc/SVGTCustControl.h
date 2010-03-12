@@ -26,10 +26,10 @@
 #include <e32property.h> 
 #include <SVGAnimationListener.h>
 #include <SVGEngineInterfaceImpl.h>
-#include <SvgRequestObserver.h>
-#include <aknutils.h>
+#include <SVGRequestObserver.h>
+#include <AknUtils.h>
 
-#include <SvgListener.h>
+#include <SVGListener.h>
 #include <SVGHyperlinkListener.h>
 
 #include <SVGTUIControlDbgFlags.hrh>
@@ -38,7 +38,7 @@
 #include <e32std.h>
 
 #ifdef RD_SVGT_AUDIO_SUPPORT
-#include<RemConCoreApiTargetObserver.h>    //for MRemConCoreApiTargetObserver
+#include<remconcoreapitargetobserver.h>    //for MRemConCoreApiTargetObserver
 #endif //RD_SVGT_AUDIO_SUPPORT
 
 // CONSTANTS

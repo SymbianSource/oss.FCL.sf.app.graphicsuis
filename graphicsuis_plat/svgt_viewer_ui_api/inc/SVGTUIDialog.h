@@ -19,7 +19,7 @@
 
 #ifndef __SVGTUIDIALOG_H__
 #define __SVGTUIDIALOG_H__
-#include <akndialog.h>
+#include <AknDialog.h>
 #include <aknnavide.h> 
 #include <SVGTCustControl.h> 
 #include <SvgtApplicationExitObserver.h>

@@ -21,7 +21,7 @@
 #define SVGTVIEWERAPPDOWNLOADS_H
 
 //  INCLUDES
-#include <DownloadMgrClient.h>                        //RHttpDownload
+#include <downloadmgrclient.h>                        //RHttpDownload
 #include <e32base.h>                                  //CBase
 
 

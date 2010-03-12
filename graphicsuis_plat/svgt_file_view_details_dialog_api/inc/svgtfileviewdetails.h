@@ -22,7 +22,7 @@
 
 //  INCLUDES
 #include <e32base.h>
-#include <aknpopup.h>
+#include <aknPopup.h>
 #include <SVGTDrmHelper.h>
 
 // FORWARD DECLARATIONS

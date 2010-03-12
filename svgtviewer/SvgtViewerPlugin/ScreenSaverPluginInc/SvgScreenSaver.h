@@ -21,7 +21,7 @@
 #define SVGSCREENSAVER_H
 
 #include <coecntrl.h>
-#include <PluginAdapterInterface.h>
+#include <pluginadapterinterface.h>
 #include <SVGTAppObserver.h>
 #include <NPNExtensions.h>
 

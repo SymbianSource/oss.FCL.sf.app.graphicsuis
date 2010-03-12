@@ -18,7 +18,7 @@
 */
 
 
-#include <BrowserLauncher.h>
+#include <browserlauncher.h>
 #include <DocumentHandler.h>
 #include <uri16.h>
 #include <uriutils.h>
@@ -27,13 +27,13 @@
 #include <eikapp.h>
 #include <eikdef.h>
 #include <flogger.h>
-#include <CDownloadMgrUiUserInteractions.h>
-#include <CDownloadMgrUiDownloadsList.h>
-#include <CDownloadMgrUiLibRegistry.h>
-#include <BrowserOverriddenSettings.h>
+#include <cdownloadmgruiuserinteractions.h>
+#include <cdownloadmgruidownloadslist.h>
+#include <cdownloadmgruilibregistry.h>
+#include <browseroverriddensettings.h>
 
 #ifdef __SERIES60_NATIVE_BROWSER
-#include <BrowserUiSDKCRKeys.h>    // Include only if s60 native 
+#include <browseruisdkcrkeys.h>    // Include only if s60 native 
                                    // browser available
 #endif
 
