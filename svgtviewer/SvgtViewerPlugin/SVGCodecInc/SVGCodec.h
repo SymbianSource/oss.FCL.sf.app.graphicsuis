@@ -81,8 +81,7 @@ public: //From MSvgRequestObserver
     TBool ScriptCall( const TDesC& aScript, CSvgElementImpl* aCallerElement );
 
     TInt FetchImage( const TDesC& aUri, RFs& aSession, RFile& aFileHandle ) ;
-    TInt CSvgReadCodec::FetchFont( const TDesC& /* aUri */, 
-                                    RFs& /* aSession */, RFile& /* aFileHandle */ );
+    TInt FetchFont( const TDesC& /* aUri */, RFs& /* aSession */, RFile& /* aFileHandle */ );
 
     void GetSmilFitValue( TDes& aSmilValue );
 
