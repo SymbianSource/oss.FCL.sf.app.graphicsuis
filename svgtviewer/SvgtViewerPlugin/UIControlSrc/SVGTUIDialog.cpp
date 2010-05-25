@@ -42,7 +42,7 @@
 #include <akntitle.h>
 #include <data_caging_path_literals.hrh>
 #include <StringLoader.h>
-#include <SVGTUIControl.rsg>
+#include <svgtuicontrol.rsg>
 #include <csxhelp/svgt.hlp.hrh>
 //-----------
 
@@ -1169,17 +1169,21 @@ void CSVGTUIDialog::GetHelpContext( TCoeHelpContext& aContext ) const
 void CSVGTUIDialog::HandleResourceChange( TInt aType )
     {
     CAknDialog::HandleResourceChange( aType );
-    if( iQuietExitWhenOrientationChange )
-        {
-           TryExitL( EAknCmdExit );  
-           return;
-        }
+
+    
     if ( aType == KAknsMessageSkinChange )
         {
         // No skin related action performed.
         }
         else if ( aType == KEikDynamicLayoutVariantSwitch )
             {
+        
+            if( iQuietExitWhenOrientationChange )
+                {
+                   TryExitL( EAknCmdExit );  
+                   return;
+                }
+            
             if ( iCustControl )
                 {
                 TBool isFullScreenOn;
@@ -1189,14 +1193,16 @@ void CSVGTUIDialog::HandleResourceChange( TInt aType )
                 // Change the layout to reflect layout switch
                 TRAP_IGNORE( SwitchDialogLayoutL( isFullScreenOn ) );
                 }
+            
+            // If it is a Layout switch, need to do a redraw
+            if ( aType == KEikDynamicLayoutVariantSwitch )
+                {
+                // Redraw the dialog
+                DrawDeferred();
+                }
+            
             }
 
-    // If it is a Layout switch, need to do a redraw
-    if ( aType == KEikDynamicLayoutVariantSwitch )
-        {
-        // Redraw the dialog
-        DrawDeferred();
-        }
     }
 // -----------------------------------------------------------------------------
 // CSVGTUIDialog::DrawProgressBarL

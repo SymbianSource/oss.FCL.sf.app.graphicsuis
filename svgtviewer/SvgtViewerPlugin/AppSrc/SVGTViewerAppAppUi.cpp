@@ -25,7 +25,7 @@
 #include <e32property.h>
 #include <StringLoader.h>
 #include <coeutils.h>
-#include <SVGTViewerApp.rsg>
+#include <svgtviewerapp.rsg>
 #include <SVGTAppObserverUtil.h>
 #include "SVGTViewerAppDbgFlags.hrh"
 #include "SVGTViewerAppAppUi.h"

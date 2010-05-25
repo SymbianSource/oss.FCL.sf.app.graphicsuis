@@ -36,7 +36,7 @@
 #include <ctsydomainpskeys.h> // for call handling
 #include <data_caging_path_literals.hrh>
 #include <gdi.h>
-#include <SVGTUIControl.rsg>
+#include <svgtuicontrol.rsg>
 #include <svgtuicontrol.mbg>
 // User Includes
 #include "SVGTUIControlDbgFlags.hrh"

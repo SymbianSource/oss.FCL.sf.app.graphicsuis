@@ -20,7 +20,7 @@
 #include <coemain.h>
 #include <imageconversion.h>
 #include <icl_uids.hrh>
-#include <102073D7_extra.rsg>
+#include <102073d7_extra.rsg>
 #include <SvgCodecImageConstants.hrh>
 #include "SVGCodec.h"
 

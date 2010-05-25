@@ -20,7 +20,7 @@
 //  INCLUDES
 
 #include <appinfo.rh>
-#include <SVGTViewerApp.rsg>
+#include <svgtviewerapp.rsg>
 #include <data_caging_paths_strings.hrh>
 
 #include "SVGTViewerAppDbgFlags.hrh"

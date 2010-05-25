@@ -55,7 +55,7 @@
 #include <bautils.h>
 #include <eikprogi.h>
 #include <e32svr.h>
-#include <SVGTAppObserverUtil.rsg>
+#include <svgtappobserverutil.rsg>
 #include <SVGTAppObserverUtil.h>
 #include <pathinfo.h>
 #include <sysutil.h>
