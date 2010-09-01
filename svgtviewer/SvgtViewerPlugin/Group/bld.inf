@@ -1,0 +1,91 @@
+/*
+* Copyright (c) 2004-2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This is a top level bld file that drives all sub-components
+*                that make up the SVGT Viewer App and the UI Control
+*
+*/
+
+
+#ifdef __SVGT_VIEWER 
+
+#include <platform_paths.hrh>
+
+PRJ_PLATFORMS
+DEFAULT
+
+//  Help exports
+#include "../help/group/bld.inf"
+
+PRJ_MMPFILES
+SVGTAppObserverUtil.mmp
+SVGTViewerApp.mmp
+SVGTUIControl.mmp
+SVGCodec.mmp
+svgtfileviewdetails.mmp
+#ifdef __SVGT_SCREENSAVER_PLUGIN
+SVGTScreenSaverPlugin.mmp
+#endif //__SVGT_SCREENSAVER_PLUGIN
+
+//gnumakefile icons_dc.mk
+//#ifdef __SCALABLE_ICONS
+//gnumakefile icons_aif_scalable_dc.mk
+//#else
+//gnumakefile icons_aif_bitmaps_dc.mk
+//#endif // __SCALABLE_ICONS
+
+//S60 CODE CHANGES FOR RAPTOR
+PRJ_EXTENSIONS
+START EXTENSION s60/mifconv
+OPTION TARGETFILE svgtuicontrol.mif
+OPTION HEADERFILE svgtuicontrol.mbg
+OPTION SOURCES -c8,8 qgn_indi_viewer_panning_down  \
+              -c8,8 qgn_indi_viewer_panning_left  \
+              -c8,8 qgn_indi_viewer_panning_right \
+              -c8,8 qgn_indi_viewer_panning_up    \
+              -c8,8 qgn_indi_viewer_pointer       \
+              -c8,8 qgn_indi_viewer_pointer_hand  \
+              -c8,8 qgn_indi_viewer_pointer_text  \
+              -c8,8 qgn_indi_cams_paused         
+
+END
+
+START EXTENSION s60/mifconv
+OPTION TARGETFILE svgtviewerapp_aif.mif
+OPTION SOURCES -c8,8 qgn_menu_mg
+END
+
+
+
+PRJ_EXPORTS
+// CP50 Build Improvements
+../rom/SVGTAppObserverUtil.iby   CORE_APP_LAYER_IBY_EXPORT_PATH(svgtappobserverutil.iby)
+../rom/SVGTViewerApp.iby         CORE_APP_LAYER_IBY_EXPORT_PATH(svgtviewerapp.iby)
+../rom/SVGTUIControl.iby         CORE_APP_LAYER_IBY_EXPORT_PATH(svgtuicontrol.iby)
+../rom/SVGCodec.iby              CORE_APP_LAYER_IBY_EXPORT_PATH(svgcodec.iby)
+../rom/SVGTFileViewDetails.iby   CORE_APP_LAYER_IBY_EXPORT_PATH(svgtfileviewdetails.iby)
+../rom/SVGScreenSaverPlugin.iby  CORE_APP_LAYER_IBY_EXPORT_PATH(svgscreensaverplugin.iby)
+
+// Localised Resource iby file exports
+../rom/SVGTAppObserverUtilResources.iby LANGUAGE_APP_LAYER_IBY_EXPORT_PATH(svgtappobserverutilresources.iby)
+../rom/SVGTFileViewDetailsResources.iby LANGUAGE_APP_LAYER_IBY_EXPORT_PATH(svgtfileviewdetailsresources.iby)
+../rom/SVGTUIControlResources.iby       LANGUAGE_APP_LAYER_IBY_EXPORT_PATH(svgtuicontrolresources.iby)
+../rom/SVGTViewerAppResources.iby       LANGUAGE_APP_LAYER_IBY_EXPORT_PATH(svgtviewerappresources.iby)
+
+// Loc files: Ease of localised builds
+../loc/svgtfileviewdetails.loc 	 APP_LAYER_LOC_EXPORT_PATH(svgtfileviewdetails.loc)
+../loc/svgtuicontrol.loc         APP_LAYER_LOC_EXPORT_PATH(svgtuicontrol.loc)
+
+#endif // __SVGT_VIEWER
+
+//  End of File

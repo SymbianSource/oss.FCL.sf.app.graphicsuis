@@ -1,0 +1,8 @@
+EXPORTS
+	?AssignImageData@CSVGTUIDialog@@QAEXABVTDesC16@@PAVHBufC8@@@Z @ 1 NONAME ; void CSVGTUIDialog::AssignImageData(class TDesC16 const &, class HBufC8 *)
+	?GenerateThumbnailLD@CSVGTThumbnailUtil@@SAHAAVRFile@@AAVCFbsBitmap@@1@Z @ 2 NONAME ; int CSVGTThumbnailUtil::GenerateThumbnailLD(class RFile &, class CFbsBitmap &, class CFbsBitmap &)
+	?NewL@CSVGTCustControl@@SAPAV1@AAVRFile@@PAVMSvgtAppObserver@@PAVMSVGTProgressBarDrawImpl@@PAVMSVGTMSKImpl@@PAVMSvgtApplicationExitObserver@@HPBVCCoeControl@@H@Z @ 3 NONAME ; class CSVGTCustControl * CSVGTCustControl::NewL(class RFile &, class MSvgtAppObserver *, class MSVGTProgressBarDrawImpl *, class MSVGTMSKImpl *, class MSvgtApplicationExitObserver *, int, class CCoeControl const *, int)
+	?NewL@CSVGTUIDialog@@SAPAV1@XZ @ 4 NONAME ; class CSVGTUIDialog * CSVGTUIDialog::NewL(void)
+	?NewLC@CSVGTUIDialog@@SAPAV1@XZ @ 5 NONAME ; class CSVGTUIDialog * CSVGTUIDialog::NewLC(void)
+	?AddListener@CSVGTCustControl@@QAEXPAVMSvgCustControlListener@@W4TCustControlListener@@@Z @ 6 NONAME ; void CSVGTCustControl::AddListener(class MSvgCustControlListener *, enum TCustControlListener)
+

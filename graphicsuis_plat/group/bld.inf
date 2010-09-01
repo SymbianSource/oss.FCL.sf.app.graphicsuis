@@ -1,0 +1,23 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Includes all the Domain API specific bld.inf files, which 
+*                export files.
+*
+*/
+
+
+
+#include "../svgt_viewer_ui_api/group/bld.inf"
+#include "../svg_application_observer_utility_api/group/bld.inf"
+#include "../svgt_file_view_details_dialog_api/group/bld.inf"
