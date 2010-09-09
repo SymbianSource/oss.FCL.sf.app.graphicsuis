@@ -1,0 +1,513 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Localization strings for File view details
+*
+*/
+
+
+
+//d: Heading Text for the presentation details like size, date, format etc.
+//d: When the 'View Details' option is selected, the presentation details view appears.
+//l: heading_pane_t1
+//w:
+//r:3.0
+//
+#define qtn_heading_pres_details "Presentation details"
+
+//d: Keyword conveying the size of the SVG-T file.
+//d: When the 'View Details' option is selected, the presentation details view appears.
+//d: The SVG-T files size information is displayed as "Size %N B", or "Size %N kB"
+//d: where the %N is replaced by the number of bytes/kbytes of the size of file.
+//l: list_double_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_details_size "Size"
+
+//d: Expressed in number of kbytes
+//d: When the 'View Details' option is selected, the presentation details view appears.
+//d: The SVG-T files size information is displayed as "Size %N kB", where the %N is replaced
+//d: by the number of kbytes of the size of file.
+//l: list_double_popup_menu_pane_2
+//w:
+//r:3.0
+//
+#define qtn_details_size_kb " %U kB" 
+
+//d: Expressed in number of bytes
+//d: When the 'View Details' option is selected, the presentation details view appears.
+//d: The SVG-T files size information is displayed as "Size %N B", where the %N is replaced
+//d: by the number of bytes of the size of file.
+//l: list_double_popup_menu_pane_2
+//w:
+//r:3.0
+//
+#define qtn_details_size_b "%U B" 
+
+
+//d: Keyword conveying the Time when the SVG-T file was received in the system.
+//d: When the 'View Details' option is selected, the presentation details view appears.
+//l: list_double_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_details_time "Time"
+
+
+//d: Keyword conveying the Date when the SVG-T file was received in the system.
+//d: When the 'View Details' option is selected, the presentation details view appears.
+//l: list_double_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_details_date "Date"
+
+//d: Keyword conveying the Format of the SVG-T file
+//d: When the 'View Details' option is selected, the presentation details view appears.
+//l: list_double_popup_menu_pane_1
+//w:
+//r:3.0
+//
+#define qtn_details_format "Format"
+
+
+// *******************************
+// Copy from DRMRightsManager.loc 
+// *******************************
+
+//d:Second part of the first line of the fourth entry of Details View listbox
+//d:Related Media Object can be displayed (for example an image)
+//l:list_single_big_heading_pane_1_2nd_part
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det2_display    "Display"
+
+//d:Possible first line for fourth entry of Details View listbox
+//d:%U is the type of rigths (qtn_drm_mgr_det2_play, qtn_drm_mgr_det2_display,
+//d:qtn_drm_mgr_det2_execute or qtn_drm_mgr_det2_print)
+//d:Second line is qtn_drm_mgr_det_unlimited, meaning that there are no 
+//d:constraints for this type of rights
+//l:list_double_pane_1
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_full_x      "Rights (%U)"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:No constraints for this type of Right.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_unlimited   "Unlimited"
+
+//d:Possible first line for fourth entry of Details View listbox
+//d:%U is the type of rigths (qtn_drm_mgr_det2_play, qtn_drm_mgr_det2_display,
+//d:qtn_drm_mgr_det2_execute or qtn_drm_mgr_det2_print)
+//d:Second line is qtn_drm_mgr_det_1_count or qtn_drm_mgr_det_n_counts, 
+//d:meaning the number of times that this object can be used.
+//l:list_double_pane_1
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_utl_x       "Times left (%U)"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:Usage times left is 1: it means that this object can be played, displayed,
+//d:executed or printed (according to the examined type of right) only once 
+//d:more.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_1_count     "1 count"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N is the number of counts
+//d:Usage times left is %n: it means that this object can be played, displayed,
+//d:executed or printed (according to the examined type of right) only %N times
+//d:more.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_n_counts    "%N counts"
+
+//d:Possible first line for fourth entry of Details View listbox
+//d:%U is the type of rigths (qtn_drm_mgr_det2_play, qtn_drm_mgr_det2_display,
+//d:qtn_drm_mgr_det2_execute or qtn_drm_mgr_det2_print)
+//d:Second line is qtn_drm_mgr_det_not_act, meaning that this object has not 
+//d:been activated yet.
+//l:list_double_pane_1
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_uts_x       "Times status (%U)"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:Rights not activated
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_not_act     "Not activated"
+
+//d:Possible first line for fourth entry of Details View listbox
+//d:%U is the type of rigths (qtn_drm_mgr_det2_play, qtn_drm_mgr_det2_display,
+//d:qtn_drm_mgr_det2_execute or qtn_drm_mgr_det2_print)
+//d:Second line is qtn_drm_mgr_det_inter or qtn_drm_mgr_det_inter_two, meaning 
+//d:a quantity of time that specifies how long this object can be used.
+//l:list_double_pane_1
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_udl_x       "Time left (%U)"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:There is only one entry for an interval: e.g. "1 year"
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_inter       "%U"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:There are two entries for an interval: e.g. "1 year, 2 months"
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_inter_two   "%0U, %1U"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:It reports that the time constraint for this type of object is 1 year. 
+//d:Other quantities of time may follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_years_one        "1 year"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of years of an interval
+//d:It is used for period of years ending with 1 from 21 (21, 31, 41, etc.)
+//d:It reports that the time constraint for this type of object is %N years.
+//d:Other quantities of time may follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_years_one_final  "%N years"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of years of an interval
+//d:It is used for period of years ending from 2 to 4, excluded 12-14 (2-4, 
+//d:22-24, 32-34, etc.)
+//d:It reports that the time constraint for this type of object is %N years.
+//d:Other quantities of time may follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_years_two_four   "%N years"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of years of an interval
+//d:It is used for period of years ending from 5 to 0 plus range between 11 and 
+//d:14 (5-20, 25-30, 35-40, etc.)
+//d:It reports that the time constraint for this type of object is %N years.
+//d:Other quantities of time may follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_years_five_zero  "%N years"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:It reports that the time constraint for this type of object is 1 month. 
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_months_one       "1 month"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of months of an interval
+//d:It is used for period from two to four months
+//d:It reports that the time constraint for this type of object is %N months. 
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_months_two_four  "%N months"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of months of an interval
+//d:It is used for period greater than four months
+//d:It reports that the time constraint for this type of object is %N months. 
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_months_five_zero "%N months"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:It reports that the time constraint for this type of object is 1 day. 
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_days_one         "1 day"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of days of an interval
+//d:It is used for a period of 21 days
+//d:It reports that the time constraint for this type of object is %N days. 
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_days_one_final   "%N days"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of days of an interval
+//d:It is used for period of days ending from 2 to 4, excluded 12-14 (2-4, 
+//d:22-24)
+//d:It reports that the time constraint for this type of object is %N days. 
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_days_two_four    "%N days"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of days of an interval
+//d:It is used for period of days ending from 5 to 0 plus range between 11 and 
+//d:14 (5-20, 25-30)
+//d:It reports that the time constraint for this type of object is %N days. 
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_days_five_zero   "%N days"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:It reports that the time constraint for this type of object is 1 hour. 
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_hours_one        "1 hour"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of hours of an interval
+//d:It is used for a period of 21 hours
+//d:It reports that the time constraint for this type of object is %N hours.
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_hours_one_final  "%N hours"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of hours of an interval
+//d:It is used for period of hours ending from 2 to 4, excluded 12-14 (2-4, 
+//d:22-23)
+//d:It reports that the time constraint for this type of object is %N hours.
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_hours_two_four   "%N hours"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of hours of an interval
+//d:It is used for a period included from 5 to 20 hours
+//d:It reports that the time constraint for this type of object is %N hours.
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_hours_five_zero  "%N hours"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:It reports that the time constraint for this type of object is 1 minute. 
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_mins_one         "1 minute"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of minutes of an interval
+//d:It is used for period of minutes ending with 1 from 21 (21, 31, 41, 51)
+//d:It reports that the time constraint for this type of object is %N minutes.
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_mins_one_final   "%N minutes"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of minutes of an interval
+//d:It is used for period of minutes ending from 2 to 4, excluded 12-14 (2-4,
+//d:22-24, 32-34, 42-44, 52-54)
+//d:It reports that the time constraint for this type of object is %N minutes.
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_mins_two_four    "%N minutes"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of minutes of an interval
+//d:It is used for period of minutes ending from 5 to 0 plus range between 11 
+//d:and 14 (5-20, 25-30, 35-40, 45-50, 53-59)
+//d:It reports that the time constraint for this type of object is %N minutes.
+//d:Other quantities of time may precede or follow.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_mins_five_zero   "%N minutes"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:It reports that the time constraint for this type of object is 1 second. 
+//d:Other quantities of time may precede.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_secs_one         "1 second"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of seconds of an interval
+//d:It is used for period of seconds ending with 1 from 21 (21, 31, 41, 51)
+//d:It reports that the time constraint for this type of object is %N seconds.
+//d:Other quantities of time may precede.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_secs_one_final   "%N seconds"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of seconds of an interval
+//d:It is used for period of seconds ending from 2 to 4, excluded 12-14 (2-4,
+//d:22-24, 32-34, 42-44, 52-54)
+//d:It reports that the time constraint for this type of object is %N seconds.
+//d:Other quantities of time may precede.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_secs_two_four    "%N seconds"
+
+//d:Possible second line for fourth entry of Details View listbox
+//d:%N number of seconds of an interval
+//d:It is used for period of minutes ending from 5 to 0 plus range between 11 
+//d:and 14 (5-20, 25-30, 35-40, 45-50, 53-59)
+//d:It reports that the time constraint for this type of object is %N seconds.
+//d:Other quantities of time may precede.
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_nbr_of_secs_five_zero   "%N seconds"
+
+//d:Possible first line for fourth entry of Details View listbox
+//d:%U is the type of rigths (qtn_drm_mgr_det2_play, qtn_drm_mgr_det2_display,
+//d:qtn_drm_mgr_det2_execute or qtn_drm_mgr_det2_print)
+//d:Second line is a date, meaning when the object started to be valid.
+//l:list_double_pane_1
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_rvf_x       "Valid from (%U)"
+
+//d:Possible first line for fourth entry of Details View listbox
+//d:%U is the type of rigths (qtn_drm_mgr_det2_play, qtn_drm_mgr_det2_display,
+//d:qtn_drm_mgr_det2_execute or qtn_drm_mgr_det2_print)
+//d:Second line is a date, meaning until when the object is valid.
+//l:list_double_pane_1
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_rvt_x       "Valid until (%U)"
+
+//d:First line of third entry of Details View listbox
+//d:It reports if it is possible to send Media Object or not.
+//d:Second line is qtn_drm_mgr_det_allowed or qtn_drm_mgr_det_forbid
+//l:list_double_pane_1
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_cs          "Content sending"
+
+//d:Possible second line for third entry of Details View listbox
+//d:Sending of the content is allowed
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_allowed     "Allowed"
+
+//d:Possible second line for third entry of Details View listbox
+//d:Sending of the content is forbidden
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_forbid      "Not allowed"
+
+//d:First line of first entry of Details View listbox
+//d:It indicates the current status of the selected Right Object
+//d:Second line is qtn_drm_mgr_det_valid or qtn_drm_mgr_det_exp
+//l:list_double_pane_1
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_stat        "Status"
+
+//d:Possible second line for first entry of Details View listbox
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_valid       "Activation key is valid"
+
+//d:Possible second line for first entry of Details View listbox
+//l:list_double_pane_2
+//w:
+//r:3.0
+//
+#define qtn_drm_mgr_det_exp         "Activation key expired"
+
+
+// End of File

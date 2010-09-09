@@ -1,0 +1,663 @@
+/*
+* Copyright (c) 2004,2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Resource file for SVGTUIControl.dll
+*
+*/
+
+
+//  RESOURCE IDENTIFIER
+NAME    SVGU // 4 letter ID
+
+//  INCLUDES
+
+#include <eikon.rh>
+#include <eikon.hrh>
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+#include <avkon.loc>
+#include <data_caging_paths_strings.hrh>
+
+#include "SVGTUIDialog.hrh"
+#include "SVGTCustControl.rh"
+#include <svgtuicontrol.loc>
+#include "SVGTUIControlDbgFlags.hrh"
+//  CONSTANTS
+
+//  MACROS
+
+//  RESOURCE DEFINITIONS
+
+RESOURCE RSS_SIGNATURE
+    {
+    }
+
+
+RESOURCE TBUF
+    {
+    buf = "SVGUIControl";
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_svgt_wait_note
+// Resource for wait note displayed while opening SVGT files.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_svgt_wait_note
+    {
+    flags = EAknWaitNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_EMPTY;   // No Softkeys displayed
+                                        // when image is loading.
+    items=
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = ESvgtWaitNote;
+            control = AVKON_NOTE 
+                {
+                layout = EWaitLayout;
+                animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+                };
+            }
+        };
+    }
+// -----------------------------------------------------------------------------
+//
+// r_svgt_dialog_menubar
+// Resource for SVGT Dialog "Options" Menu Bar
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_BAR r_svgt_dialog_menubar
+    {
+    titles =
+        {
+        MENU_TITLE
+            {
+            menu_pane = r_svgt_dialog_menu;
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_svgt_dialog_menu
+// Resource for SVGT Dialog "Options" Menu Pane
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_PANE r_svgt_dialog_menu
+    {
+    items =
+        {
+        MENU_ITEM
+            {
+            command = ESvgtDlgSaveCommand;
+            txt = qtn_svgt_options_save;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgZoomInCommand;
+            txt = qtn_svgt_options_zoom_in;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgZoomOutCommand;
+            txt = qtn_svgt_options_zoom_out;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgSelectTextCommand;
+            txt = qtn_svgt_options_select_text;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgEditTextCommand;
+            txt = qtn_svgt_options_edit_text;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgPlayCommand;
+            txt = qtn_svgt_options_play;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgPauseCommand;
+            txt = qtn_svgt_options_pause;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgStopCommand;
+            txt = qtn_svgt_options_stop;
+            },
+#ifdef RD_SVGT_AUDIO_SUPPORT            
+        MENU_ITEM
+            {
+            command = ESvgtDlgSetVolumeCommand;
+            txt = qtn_svgt_options_setvolume;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgMuteCommand;
+            txt = qtn_svgt_options_mute;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgUnmuteCommand;
+            txt = qtn_svgt_options_unmute;
+            },
+#endif //RD_SVGT_AUDIO_SUPPORT            
+        MENU_ITEM
+            {
+            command = ESvgtDlgLoopCascadeCommand;
+            txt = qtn_svgt_options_loop;
+            cascade = r_svgt_loop_submenu;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgFindTextCommand;
+            txt = qtn_svgt_options_find_text;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgFullScreenCommand;
+            txt = qtn_svgt_options_full_screen;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgNormalScreenCommand;
+            txt = qtn_svgt_options_normal_screen;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgListRotateCascadeCommand;
+            txt = qtn_svgt_options_rotate;
+            cascade = r_svgt_rotate_submenu;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgViewDetailsCommand;
+            txt = qtn_svgt_options_view_details;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgListDownloadCommand;
+            txt = qtn_browser_list_downloads;
+            },
+#ifdef __SERIES60_HELP            
+        MENU_ITEM
+            {
+            command = ESvgtDlgHelpCommand;
+            txt = qtn_options_help;
+            },
+#endif // __SERIES60_HELP            
+        MENU_ITEM
+            {
+            command = EAknCmdExit;
+            txt = qtn_options_exit;
+            }
+        };
+    }
+
+// ---------------------------------------------------------
+//
+//   r_svgt_loop_submenu
+//   Loop Submenu 
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_PANE r_svgt_loop_submenu
+    {
+    items =
+        {
+        MENU_ITEM
+            {
+            command = ESvgtDlgLoopOnCommand;
+            txt = qtn_svgt_options_loop_on;
+            flags = EEikMenuItemRadioStart ;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgLoopOffCommand;
+            txt = qtn_svgt_options_loop_off;
+            flags = EEikMenuItemSymbolOn | EEikMenuItemRadioEnd;
+            }  
+        };
+    }
+ 
+//  
+// -----------------------------------------------------------------------------
+//   
+// r_svgt_rotate_submenu
+// Rotate submenu
+//
+// -----------------------------------------------------------------------------
+//
+
+RESOURCE MENU_PANE r_svgt_rotate_submenu
+    {
+    items =
+        {
+        MENU_ITEM
+            {
+            command = ESvgtDlgAngle90;
+            txt = qtn_svgt_options_rotate_90;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgAngle180;
+            txt = qtn_svgt_options_rotate_180;
+            },
+        MENU_ITEM
+            {
+            command = ESvgtDlgAngle270;
+            txt = qtn_svgt_options_rotate_270;
+            }
+        };
+    }
+
+// ---------------------------------------------------------
+//
+//   r_svgt_viewer_dialog
+//   SVG-T Dialog
+//
+// ---------------------------------------------------------
+//
+
+RESOURCE DIALOG r_svgt_viewer_dialog
+    {
+    flags = EEikDialogFlagNoDrag |
+            EEikDialogFlagFillAppClientRect |
+            EEikDialogFlagNoBorder |
+            EEikDialogFlagNoShadow |
+            EEikDialogFlagCbaButtons |
+            EEikDialogFlagWait |
+            EEikDialogFlagDontEatUpDownEvents;
+    title = "SVGT Dialog";
+    buttons = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+    items =
+        {
+        DLG_LINE
+            {
+            type = ESVGTCustControl;
+            id = ESVGTDialogCustControlIdData;
+            control = SVGT_CUST_CONTROL
+                {
+                };
+            }
+        };
+    }
+    
+// ---------------------------------------------------------
+//
+//   r_svgt_viewer_preview_dialog
+//   SVG-T Dialog
+//
+// ---------------------------------------------------------
+//
+
+RESOURCE DIALOG r_svgt_viewer_preview_dialog
+    {
+    flags = EEikDialogFlagNoDrag |
+            EEikDialogFlagFillAppClientRect |
+            EEikDialogFlagNoBorder |
+            EEikDialogFlagNoShadow |
+            EEikDialogFlagCbaButtons |
+            EEikDialogFlagWait |
+            EEikDialogFlagDontEatUpDownEvents;
+    title = "SVGT Dialog";
+    buttons = R_AVKON_SOFTKEYS_BACK;
+    items =
+        {
+        DLG_LINE
+            {
+            type = ESVGTCustControl;
+            id = ESVGTDialogCustControlIdData;
+            control = SVGT_CUST_CONTROL
+                {
+                };
+            }
+        };
+    }
+
+
+//----------------------------------------------------
+//
+//    r_svgt_file_open_failure
+//    File open problem information note.
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_svgt_file_open_failure
+    {
+    buf = qtn_svgt_info_unable_to_open;
+    }
+    
+//----------------------------------------------------
+//
+//    r_svgt_file_not_complete
+//    File not complete information note.
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_svgt_file_not_complete
+    {
+    buf = qtn_svgt_info_not_complete;
+    }
+
+//For View Details Strings
+
+// ---------------------------------------------------
+//
+//    r_svgt_file_details_row_format
+//
+// ---------------------------------------------------
+//
+RESOURCE TBUF r_svgt_file_details_row_format
+    {
+    buf = "%0U\t%1U"; 
+    }
+
+//For MSK Labels
+//----------------------------------------------------
+//
+//    r_svgt_msk_label_select
+//    MSK Label "Select"
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_svgt_msk_label_select
+	{
+	buf=qtn_msk_select;
+	}
+//----------------------------------------------------
+//
+//    r_svgt_msk_label_select
+//    MSK Label "Edit"
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_svgt_msk_label_edit
+	{
+	buf=qtn_msk_edit;
+	}
+//----------------------------------------------------
+//
+//    r_svgt_msk_label_select
+//    MSK Label "Open"
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_svgt_msk_label_open
+	{
+	buf=qtn_msk_open;
+	}
+//----------------------------------------------------
+//
+//    r_svgt_msk_label_select
+//    MSK context sensitive menu icon
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_svgt_msk_label_context
+	{	
+	buf=text_softkey_option;
+	}
+//----------------------------------------------------
+//
+//    r_svgt_msk_label_select
+//    MSK Label "Play"
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_svgt_msk_label_play
+	{
+	buf=qtn_msk_play;
+	}
+//----------------------------------------------------
+//
+//    r_svgt_msk_label_select
+//    MSK Label "Save"
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_svgt_msk_label_save
+	{
+	buf=qtn_msk_save;
+	}
+
+// ---------------------------------------------------
+//
+// r_svgt_softkeys_fullscreen
+// Resource for CBA in Full Screen mode
+//
+// ---------------------------------------------------
+//
+
+RESOURCE CBA r_svgt_softkeys_fullscreen
+    {
+    buttons =
+        {
+        CBA_BUTTON 
+            {
+            id = EAknSoftkeyOptions; 
+            txt = text_softkey_empty;
+            },
+        CBA_BUTTON
+            {
+            id = EAknSoftkeyBack; 
+            txt = text_softkey_empty; 
+            }
+        };
+    }
+ 
+
+// Find Text 
+
+//----------------------------------------------------
+//    
+//    r_find_text_query_dialog    
+//    Text Query Dialog Resource
+//
+//----------------------------------------------------
+//
+RESOURCE DIALOG r_find_text_query_dialog
+    {
+    flags = EAknDialogGenericQueryFlags | EEikDialogFlagNoShadow;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL__OK;//MSK label added
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_DATA_QUERY
+                { 
+                layout = EDataLayout;
+                label = qtn_svgt_query_enter_string;
+                control = EDWIN
+                    {
+                    flags= EEikEdwinNoLineOrParaBreaks;
+                    lines=1;
+                    maxlength=50;
+                    };
+                };
+            }
+        };
+    }
+
+
+//----------------------------------------------------
+//
+//    r_svgt_text_not_found
+//    "Text not Found" information note for find text.
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_svgt_text_not_found
+    {
+    buf = qtn_svgt_info_not_found;
+    }
+
+//----------------------------------------------------
+//
+//    r_svgt_braces_found_in_textarea
+//    Braces "<" or ">" found in text or textarea information note.
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_svgt_braces_found_in_textarea
+    {
+    buf = qtn_svgt_braces_found_in_textarea;
+    }
+
+//----------------------------------------------------
+//
+//    r_qtn_svgt_time_indic
+//    Progress Indicator Format String
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_qtn_svgt_time_indic
+    {
+    buf = qtn_svgt_time_indic;
+    }
+
+//----------------------------------------------------
+//
+//    r_qtn_svgt_waiting_opening
+//    Waiting note text for opening
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_qtn_svgt_waiting_opening 
+    { 
+    buf = qtn_svgt_waiting_opening; 
+    }    
+
+// ----------------------------------------------------
+// Save content (if not already saved when exiting)
+// ----------------------------------------------------
+//
+RESOURCE TBUF r_qtn_svgt_query_conf_save_downloaded  
+    { 
+    buf = qtn_iv_query_conf_save_downloaded;
+    }
+
+//----------------------------------------------------
+//
+//    
+//   Yes/No Confirmation query
+//
+//----------------------------------------------------
+//
+RESOURCE DIALOG r_svgt_confirmation_query_yes_no
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO__YES; //MSK label added
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EAknCtQuery;
+            control = AVKON_CONFIRMATION_QUERY
+                {
+                layout = EConfirmationLayout;
+                };
+            }
+        };
+    }
+
+
+//----------------------------------------------------
+//    
+//    r_svgt_text_edit_query_dialog    
+//    Text Edit Query Dialog Resource
+//
+//----------------------------------------------------
+//
+RESOURCE DIALOG r_svgt_edit_text_query_dialog
+    {
+    flags = EAknDialogGenericQueryFlags | EEikDialogFlagNoShadow;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL__OK;//MSK label added
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            itemflags=EEikDlgItemTakesEnterKey;
+            control = AVKON_DATA_QUERY
+                { 
+                layout = EDataLayout;
+                label = qtn_svgt_edit_query_string;
+                control = EDWIN
+                    {
+                    flags= KMultiLineExpandingEditorFlags |
+                           EEikEdwinNoAutoSelection;
+                    width = 5;
+                    lines = 5;
+                    maxlength = 0; //160;
+                    default_input_mode = EAknEditorTextInputMode;
+                    allowed_input_modes = EAknEditorTextInputMode | 
+                                          EAknEditorNumericInputMode;
+                    default_case = EAknEditorTextCase;
+                    allowed_case_modes = EAknEditorAllCaseModes;
+                    avkon_flags = EAknEditorFlagUseSCTNumericCharmap |
+                                  EAknEditorFlagEnablePictographInput;
+                    };
+                };
+            }
+        };
+    }
+
+//----------------------------------------------------
+//    
+//    r_svgt_text_selection_dialog    
+//    Text selection dialog Resource
+//
+//----------------------------------------------------
+//
+RESOURCE DIALOG r_svgt_text_selection_dialog
+    {
+    flags = EAknDialogGenericQueryFlags | 
+            EEikDialogFlagNoShadow;
+    buttons = R_AVKON_SOFTKEYS_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            itemflags=0;
+            control = AVKON_DATA_QUERY
+                { 
+                layout = EDataLayout;
+                label = qtn_svgt_select_query_string;
+                control = EDWIN
+                    {
+                    flags = KMultiLineExpandingEditorFlags;
+                    //width = 5;
+                    lines = 5;
+                    };
+                };
+            }
+        };
+    }
+
+// End of File
